@@ -50,3 +50,23 @@ img {
 .flex-2 {
   flex:2
 }
+
+.desktop-only {
+  display: none;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media (width <= 376px) {
+  .mobile-only {
+    display: initial;
+  }
+}
+
+@media (width >= 80em) {
+  .desktop-only{
+    display: initial;
+  }
+}
